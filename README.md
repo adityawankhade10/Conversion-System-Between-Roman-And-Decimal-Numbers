@@ -6,18 +6,35 @@
 
 The Roman-Decimal Converter is a simple web application built using Python and the Tkinter library. It allows users to convert Roman numerals to decimal (integer) values and vice versa. This application leverages object-oriented programming principles to achieve modular and reusable code.
 
-#### How to run/use the program
+#### How to run the program
 
-Ensure you have Python installed on your system.
-Save the provided Python script (converter.py) in your working directory.
-Open a terminal or command prompt.
-Navigate to the directory where the script is saved.
-Run the command: python converter.py
-The application window will open, allowing you to input values and perform conversions.
+- Ensure you have Python installed on your system.
+
+- Save the provided Python script (converter.py) in your working directory.
+
+- Open a terminal or command prompt.
+
+- Navigate to the directory where the script is saved.
+
+- Run the command: python converter.py
+
+-  The application window will open, allowing you to input values and perform conversions.
+
+#### How to use the program?
+
+- Enter the value you wish to convert in the input field.
+
+- Select the conversion type by choosing either "Roman to Decimal" or "Decimal to Roman".
+
+- Click the "Convert" button.
+
+- The result will be displayed below the button.
+
+- Each conversion result is saved to a text file named conversion_results.txt in the same directory as the script.
 
 ## Functional overview and code analysis
 
-The 
+The 4 pillars of OOP that is Polymorphism, Abstraction, Inheritance and Encapsulation is used to program this web application. And the design pattern used to make this program are Factory Pattern and Strategy Pattern. 
 
 #### Polymorphism
 
@@ -55,19 +72,19 @@ The Factory Pattern is used in scenarios where we need different types of object
 
 ![image](https://github.com/adityawankhade10/Conversion-System-Between-Roman-And-Decimal-Numbers/assets/169479302/d1cd8104-5c4a-46e2-9626-85d14736a64d)
 
-How it works: The ConversionSystem initializes instances of RomanToDecimalConverter and DecimalToRomanConverter and provides methods to access these converters.
+- How it works: The ConversionSystem initializes instances of RomanToDecimalConverter and DecimalToRomanConverter and provides methods to access these converters.
 
-Why it is suitable: This pattern is suitable here as it centralizes the creation of converter objects and provides a clean interface for performing conversions.
+- Why it is suitable: This pattern is suitable here as it centralizes the creation of converter objects and provides a clean interface for performing conversions.
 
 #### Strategy Pattern
 
 The Strategy Pattern is used to define a family of algorithms, encapsulate each one, and make them interchangeable. It allows the algorithm to vary independently from clients that use it. In your application, the different conversion strategies (Roman to Decimal and Decimal to Roman) are encapsulated within separate classes that implement a common interface (Converter).
 
-![image](https://github.com/adityawankhade10/Conversion-System-Between-Roman-And-Decimal-Numbers/assets/169479302/3f8d1b06-6f90-41ce-b2a0-3b139119cee7)
+![image](https://github.com/adityawankhade10/Conversion-System-Between-Roman-And-Decimal-Numbers/assets/169479302/24a570fa-33e1-41a8-b69c-e1314e715ede)
 
-How it works: The Converter class provides a common interface (convert method) for different conversion strategies. The RomanToDecimalConverter and DecimalToRomanConverter classes implement this interface with specific conversion algorithms.
+- How it works: The Converter class provides a common interface (convert method) for different conversion strategies. The RomanToDecimalConverter and DecimalToRomanConverter classes implement this interface with specific conversion algorithms.
 
-Why it is suitable: This pattern is suitable because it encapsulates the different conversion algorithms, allowing them to be used interchangeably without changing the client code.
+- Why it is suitable: This pattern is suitable because it encapsulates the different conversion algorithms, allowing them to be used interchangeably without changing the client code.
 
 
 ## Results and Summary
@@ -95,17 +112,4 @@ To extend the application, you can:
 - Provide an option to view the history of conversions from the conversion_results.txt file directly within the application.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Thank You!
