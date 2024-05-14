@@ -1,0 +1,6 @@
+Input: XDCDL, Output: 940
+Input: LLMX, Output: 1010
+Input: CDMLX, Output: 460
+Input: 05, Output: V
+Input: 09, Output: IX
+Input: 06, Output: VI
